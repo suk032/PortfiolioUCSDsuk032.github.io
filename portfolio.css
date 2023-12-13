@@ -1,0 +1,118 @@
+#title {
+    background-color: lightblue;
+    padding-bottom: 4%;
+}
+
+.title-icon {
+    color: white;
+    margin: 20px 20px;
+}
+
+h1 {
+    font-family: 'Syne', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 4rem;
+    line-height: 1;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Syne', sans-serif;
+    font-weight: bold;
+    color:#000;
+    font-size: 1.5;
+}
+
+h3 {
+    font-family: 'Syne', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-family: 'Epilogue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    font-family: 'Epilogue', sans-serif;
+    text-align: center;
+}
+
+/* Navigation Bar */
+.navbar {
+    padding: 3% 2%;
+}
+
+.navbar-brand {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.navbar-item {
+    padding: 0 5px;
+}
+
+.nav-link {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Goals */
+.icon {
+    color: rgb(137, 163, 198);
+}
+
+.center {
+    text-align: center; 
+    width: 100%; 
+}
+
+/* Projects */
+#projects {
+    background-color:rgb(221, 220, 220);
+    padding: 5% 10%;
+    text-align: center;
+}
+
+.projects-column {
+    padding: 3% 2%;
+    .card-header {
+        background-color: rgb(137, 163, 198);
+    }
+}
+
+.card-header {
+    text-align: center;
+}
+
+a {
+    color: rgb(134, 198, 219);
+}
+
+a:hover {
+    color: rgb(134, 169, 180);
+}
+  
+/* Footer */
+#footer {
+    background-color:rgb(221, 220, 220);
+    padding: 1% 5%;
+    text-align: center;
+}
+
+.social-icon {
+    margin: 20px 20px;
+    color: rgb(137, 163, 198);
+}
+
+ /* Carousel image sizes */
+ #hobbyCarousel .carousel-item img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}

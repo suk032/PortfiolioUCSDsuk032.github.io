@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styleLab2.css">
+    </head>
+    <body>
+        <h3>How to define a table?</h3>
+        <dl>
+            <dt>How to define a table?</dt>
+            <dd>A table is created in HTML by using the opening table and closing table tags.</dd>
+        </dl>
+        <h4>Describe when to use the following HTML elements:</h4>
+        <dl>
+            <dt>&lt;tr&gt;</dt>
+            <dd>The &lt;tr&gt; element is used as an opening and closing tag when wanting to define a row in a table within the table element.</dd>
+            <dt>&lt;th&gt;</dt>
+            <dd>The &lt;th&gt; element is used as an opening and closing tag within the &lt;tr&gt; tag to define a cell as a header of the cells. The &lt;th&gt; element also bolds the text in the header cell. </dd>
+            <dt>&lt;thead&gt;</dt>
+            <dd>The &lt;thead&gt; element is used as an opening and closing tag in order to group header cells of a table together.</dd>
+            <dt>&lt;tfoot&gt;</dt>
+            <dd>Similarly to the &lt;thead&gt; element, &lt;tfoot&gt; is also used as an opening and closing tag in order to group closing cells of a table together.</dd>
+            <dt>&lt;caption&gt;</dt>
+            <dd>The &lt;caption&gt; element is used as a tag after the opening table tag in order to create a caption for the table, which is centered.</dd>
+        </dl>
+        <dl>
+            <dt>What is the difference between colspan and rowspan?</dt>
+            <dd>colspan is an attribute used to create a cell over multiple columns whereas rowspan is used to create a cell over multiple rows in a table.</dd>
+            <dt>What is the difference between cells spacing and padding?</dt>
+            <dd>Cells spacing is used to define the space between cells whereas cell padding is used to define the space of a cell's content and the cell's border.</dd>
+            <dt>How do you define table borders using CSS?</dt>
+            <dd>To define table borders using CSS, the border property must be used after the table element. If borders within the table are wanted, the elements should be named as &lt;table&gt;, &lt;th&gt;, &lt;td&gt; with an opening bracket.</dd>
+            <dt>How do you control border widths using CSS?</dt>
+            <dd>To control border widths using CSS, add width: __ with a percentage corresponding to how much the table should fill up the screen to the table.</dd>
+        </dl>
+    </body>
+
+    <head>
+        <title>Schedule for Susanna Kim - suk032 - Fall Quarter, 2023</title>
+    </head>
+
+    <body>
+        <table border="1">
+            <caption>Susanna Kim's Fall 2023 Schedule</caption>
+            <!-- header -->
+            <thead>
+                <tr>
+                    <th>time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                </tr>
+            </thead>
+            <!-- 8am -->
+            <tr>
+                <td>8am</td>
+                <td>sleep<img src="images/sleep.jpeg" width="100"></td>
+                <td rowspan="2">sleep<img src="images/sleep.jpeg" width="100"></td>
+                <td>wake up</td>
+                <td rowspan="3">sleep<img src="images/sleep.jpeg" width="100"></td> 
+                <td>sleep<img src="images/sleep.jpeg" width="100"></td></td>
+                <td rowspan="3">sleep<img src="images/sleep.jpeg" width="100"></td></td>
+                <td rowspan="3">sleep<img src="images/sleep.jpeg" width="100"></td></td>
+            </tr>
+            <!-- 9am -->
+            <tr>
+                <td>9am</td>
+                <td>wake up</td>
+                <!-- <td>sleep</td> -->
+                <td><a href="https://catalog.ucsd.edu/courses/BIOL.html#:~:text=BILD%201.%20The,level%20chemistry%20course.">BILD 1 Discussion</a></td>
+                <!-- <td>sleep</td> -->
+                <td>wake up</td>
+                <!-- <td>sleep</td> -->
+                <!-- <td>sleep</td> -->
+            </tr>
+            <!-- 10am-->
+            <tr>
+                <td>10am</td>
+                <td><a href="https://catalog.ucsd.edu/courses/BIOL.html#:~:text=BILD%201.%20The,level%20chemistry%20course.">BILD 1 Lecture</a></td>
+                <td>wake up</td>
+                <td><a href="https://catalog.ucsd.edu/courses/BIOL.html#:~:text=BILD%201.%20The,level%20chemistry%20course.">BILD 1 Lecture</a></td>
+                <!-- <td>sleep</td> -->
+                <td><a href="https://catalog.ucsd.edu/courses/BIOL.html#:~:text=BILD%201.%20The,level%20chemistry%20course.">BILD 1 Lecture</a></td>
+                <!-- <td>sleep</td> -->
+                <!-- <td>sleep</td> -->
+            </tr>
+            <!-- 11am-->
+            <tr>
+                <td>11am</td>
+                <td>breakfast</td>
+                <td rowspan="2"><a href="https://catalog.ucsd.edu/courses/PHYS.html#:~:text=PHYS%201BL.%20Electricity,in%20PHYS%201B.">Physics 1B Lab</a></td> 
+                <td>breakfast</td>
+                <td>wake up</td>
+                <td>breakfast</td>
+                <td>wake up</td>
+                <td>wake up</td>
+            </tr>
+            <!--12pm-->
+            <tr>
+                <td>12pm</td>
+                <td>rest</td>
+                <!--<td>Physics 1B Lab<td>-->
+                <td>rest</td>
+                <td>breakfast/lunch</td>
+                <td>rest</td>
+                <td>breakfast/lunch</td>
+                <td>breakfast/lunch</td>
+            </tr>
+             <!--1pm-->
+             <tr>
+                <td>1pm</td>
+                <td rowspan="3">homework/study<img src="images/hw1.png" width="100px"></td>
+                <td>lunch</td>
+                <td>homework/study<img src="images/hw1.png" width="100"></td>
+                <td>rest</td>
+                <td rowspan="3"><a href="https://catalog.ucsd.edu/courses/CHEM.html#:~:text=Renumbered%20from%20CHEM%20140A,6B%20or%20CHEM%206BH.">Chem 40A SI Session</a></td> 
+                <td>rest</td>
+                <td rowspan="4">rest</td>
+            </tr>
+            <!-- 2pm -->
+            <tr>
+                <td>2pm</td>
+                <!--<td>homework/study</td>-->
+                <td rowspan="2"><a href="https://pages.ucsd.edu/~mboyle/COGS3/index.html">Cogs 3 Lecture</a></td>                 
+                <td><a href="https://catalog.ucsd.edu/courses/CHEM.html#:~:text=Renumbered%20from%20CHEM%20140A,6B%20or%20CHEM%206BH.">Chem 40A Discussion</a></td>
+                <td rowspan="2"><a href="https://pages.ucsd.edu/~mboyle/COGS3/index.html">Cogs 3 Lecture</a></td>               
+                <td rowspan="5">errands<img src="images/groceries.jpeg" width="100px"></td>
+                <!--<td>rest</td>-->
+            </tr>
+            <!-- 3pm -->
+            <tr>
+                <td>3pm</td>
+                <!--<td>homework/study</td>-->
+                <!--<td>Cogs 3 Lecture</td>-->
+                <td rowspan="2">rest</td>
+                <!--<td>Cogs 3 Lecture</td>-->
+                <!--<td>Chem 40A SI Session>-->
+                <!--<td>errands</td>-->
+                <!--<td>rest</td>-->
+            </tr>
+            <!-- 3:30pm -->
+            <tr>
+                <td>3:30pm</td>
+                <td rowspan="3">rest</td>
+                <td rowspan="2">rest</td>
+                <!--<td>rest</td>-->
+                <td rowspan="2">rest</td>
+                <td>rest</td>
+                <!--<td>errands</td>-->
+                <!--<td>rest</td>-->
+            </tr>
+            <!-- 4pm -->
+            <tr>
+                <td>4pm</td>
+                <!--<td>rest</td>-->
+                <!--<td>rest</td>-->
+                <td rowspan="2">homework/study<img src="images/hw1.png" width="100px"></td>
+                <!--<td>rest</td>-->
+                <td rowspan="2">homework/study<img src="images/hw1.png" width="100px"></td>                
+                <!--<td>errands</td>-->
+                <td>homework/study<img src="images/hw1.png" width="100px"></td>
+            </tr>
+            <!-- 5pm -->
+            <tr>
+                <td>5pm</td>
+                <!--<td>rest</td>-->
+                <td rowspan="3"><a href="https://catalog.ucsd.edu/courses/CHEM.html#:~:text=Renumbered%20from%20CHEM%20140A,6B%20or%20CHEM%206BH.">Chem 40A Lecture</a></td>
+                <!--<td>homework/study</td>-->
+                <td rowspan="3"><a href="https://catalog.ucsd.edu/courses/CHEM.html#:~:text=Renumbered%20from%20CHEM%20140A,6B%20or%20CHEM%206BH.">Chem 40A Lecture</a></td>
+                <!--<td>homework/study</td>-->
+                <!--<td>errands</td>-->
+                <td>Sunday</td>
+            </tr>
+            <!-- 6pm -->
+            <tr>
+                <td>6pm</td>
+                <td rowspan="2"><a href="https://pages.ucsd.edu/~mboyle/COGS3/index.html">Cogs 3 Discussion</a></td>
+                <!--<td>Chem 40A Lecture</td>-->
+                <td>rest</td>
+                <!--<td>Chem 40A Lecture</td>-->
+                <td>rest</td>
+                <td>rest</td>
+                <td>rest</td>
+            </tr>
+            <!-- 6:30pm -->
+            <tr>
+                <td>6:30pm</td>
+                <!--<td>Cogs 3 Discussion</td>-->
+                <!--<td>Chem 40A Lecture</td>-->
+                <td rowspan="2">dinner</td>
+                <!--<td>Chem 40A Lecture</td>-->
+                <td rowspan="2">dinner</td>
+                <td rowspan="2">dinner</td>
+                <td rowspan="2">dinner</td>
+            </tr>
+            <!-- 7pm -->
+            <tr>
+                <td>7pm</td>
+                <td>dinner</td>
+                <td>dinner</td>
+                <!--<td>dinner</td>-->
+                <td>dinner</td>
+                <!--<td>dinner</td>-->
+                <!--<td>dinner</td>-->
+                <!--<td>dinner</td>-->
+            </tr>
+            <!-- 8pm -->
+            <tr>
+                <td>8pm</td>
+                <td>gym<img src="images/gym.jpeg" width="80px"></td>
+                <td>shower<img src="images/shower.png" width="80px"></td>
+                <td>gym<img src="images/gym.jpeg" width="80px"></td>
+                <td>shower<img src="images/shower.png" width="80px"></td>
+                <td>shower<img src="images/shower.png" width="80px"></td>
+                <td>shower<img src="images/shower.png" width="80px"></td>
+                <td>shower<img src="images/shower.png" width="80px"></td>
+            </tr>
+            <!-- 9pm -->
+            <tr>
+                <td>9pm</td>
+                <td>shower<img src="images/shower.png" width="80px"></td>
+                <td rowspan="3">homework/study<img src="images/hw1.png" width="100px"></td>
+                <td>shower<img src="images/shower.png" width="80px"></td>
+                <td rowspan="3">homework/study<img src="images/hw1.png" width="100px"></td>
+                <td rowspan="3">homework/study<img src="images/hw1.png" width="100px"></td>
+                <td rowspan="3">homework/study<img src="images/hw1.png" width="100px"></td>
+                <td rowspan="3">homework/study<img src="images/hw1.png" width="100px"></td>
+            </tr>
+            <!-- 10pm -->
+            <tr>
+                <td>10pm</td>
+                <td rowspan="2">homework/study<img src="images/hw1.png" width="100px"></td>
+                <!--<td>homework/study</td>-->
+                <td rowspan="2">homework/study<img src="images/hw1.png" width="100px"></td>
+                <!--<td>homework/study</td>-->
+                <!--<td>homework/study</td>-->
+                <!--<td>homework/study</td>-->
+                <!--<td>homework/study</td>-->
+            </tr>
+            <!-- 11pm -->
+            <tr>
+                <td>11pm</td>
+                <!--<td>homework/study</td>-->
+                <!--<td>homework/study</td>-->
+                <!--<td>homework/study</td>-->
+                <!--<td>homework/study</td>-->
+                <!--<td>homework/study</td>-->
+                <!--<td>homework/study</td>-->
+                <!--<td>homework/study</td>-->
+            </tr>
+            <!-- 12am -->
+            <tr>
+                <td>12am</td>
+                <td colspan="7">get ready for bed</td>
+            </tr>
+            <!-- 1am -->
+            <tr>
+                <td>1am</td>
+                <td colspan="7">sleep<img src="images/sleep.jpeg" width="100"></td></td>
+            </tr>
+    </body>
+</html>

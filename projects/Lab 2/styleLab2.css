@@ -1,0 +1,55 @@
+table, th, td {
+    border: 1 px solid;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+caption{
+  font-size: x-large;
+  font-family:sans-serif;
+  font-weight: bold;
+}
+thead th {
+    padding: 8px;
+    text-align: left;
+    background-color: cornflowerblue;
+    color: black;
+    font-family:sans-serif;
+}
+tbody {
+    background-color:rgb(221, 227, 241);
+    font-family: sans-serif;
+}
+a:link {
+    color: blue;
+  }
+a:visited {
+    color: blueviolet;
+  }
+a:hover {
+    color: hotpink;
+  }
+a:active {
+    color:darkcyan;
+  }
+td:nth-child(1) {
+  font-weight: bold;
+  background-color:rgb(184, 201, 241);
+  color:black;
+}
+td {
+  color:darkblue;
+  display: table-cell;
+  text-align: center;
+}
+h3 {
+  color:darkblue;
+  text-align: left;
+  font-weight: bold;
+}
+h4 {
+  color:darkblue;
+  text-align: left;
+  font-weight: bold;
+}
